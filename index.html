@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>موقع dmc</title>
     <link href="https://cdn.discordapp.com/attachments/1371812978869014638/1372217436366962749/dmc_logo.png?ex=6829ed13&is=68289b93&hm=c6c1b59563e917362a8cab7d1bdad9ca5699c0053f72b4cc73005281cf312c3a&" rel="stylesheet">
-    <!-- Font Awesome لأيقونات ديسكورد ويوتيوب -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <style>
         body {
             font-family: 'Cairo', Arial, sans-serif;
@@ -38,7 +36,7 @@
             margin: 0;
         }
         .header span {
-            color: #e754c5;
+            color: #e754c5; /* وردي بنفسجي بدل الأصفر */
         }
         .welcome {
             background: #222;
@@ -70,45 +68,7 @@
         .app-title {
             font-size: 1.1em;
             font-weight: bold;
-            color: #e754c5;
-        }
-        .download-title {
-            margin: 30px auto 10px;
-            font-size: 1.25em;
-            color: #fff;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-        /* أزرار السوشيال */
-        .social-buttons-box {
-            margin: 10px auto 30px;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        .social-btn {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            border-radius: 8px;
-            border: 2px solid #fff;
-            padding: 12px 24px;
-            color: #fff;
-            font-size: 1.1rem;
-            text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.1s, box-shadow 0.1s, opacity 0.1s;
-            box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
-        }
-        .btn-blue  { background: #5865f2; border-color: #fff; }
-        .btn-red   { background: #e50000; border-color: #fff; }
-        .social-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 16px rgb(0 0 0 / 18%);
-            opacity: 0.9;
-        }
-        .social-btn i {
-            font-size: 1.3em;
+            color: #e754c5; /* وردي بنفسجي بدل الأصفر */
         }
         iframe {
             width: 100%;
@@ -127,7 +87,7 @@
 <body>
     <div class="container">
         <div class="header">
-         <img src="https://i.imgur.com/3KQZAE8.png" alt="dmc logo" width="100" height="100">
+            <img src="https://cdn.discordapp.com/attachments/1371812978869014638/1372217436366962749/dmc_logo.png?ex=6829ed13&is=68289b93&hm=c6c1b59563e917362a8cab7d1bdad9ca5699c0053f72b4cc73005281cf312c3a&" alt="dmc Logo">
             <h1>مرحباً بكم في موقع <span>dmc</span></h1>
         </div>
         <div class="welcome">
@@ -146,17 +106,6 @@
                 <span class="app-title">تطبيقات PC</span>
                 <span>💻</span>
             </div>
-        </div>
-        <!-- عنوان تحميل -->
-        <div class="download-title">اذا كـنـت تـحـتـاج اسـتـفـسـار عـن ايـشـي بـالـهـاك او الـقـنـاة خــش سـيـرفــر الـديـسـكـورد</div>
-        <!-- أزرار السوشيال تحت كلمة تحميل -->
-        <div class="social-buttons-box">
-            <a href="https://discord.gg/d-c" class="social-btn btn-blue" target="_blank">
-                ديسكورد <i class="fa-brands fa-discord"></i>
-            </a>
-            <a href="https://www.youtube.com/@iss1-u9x" class="social-btn btn-red" target="_blank">
-                يوتيوب <i class="fa-brands fa-youtube"></i>
-            </a>
         </div>
         <iframe id="content-frame" src="ios.html"></iframe>
     </div>
