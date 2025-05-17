@@ -2,62 +2,95 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
+    <title>تحميل تطبيق ios</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تحميل تطبيق iOS | dmc</title>
-    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1371812978869014638/1372217436366962749/dmc_logo.png?ex=6829ed13&is=68289b93&hm=c6c1b59563e917362a8cab7d1bdad9ca5699c0053f72b4cc73005281cf312c3a&">
+    <!-- Favicon أيقونة التاب -->
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1371812978869014638/1373386757248123031/DMC_1.png?ex=682a3997&is=6828e817&hm=d6a3c0d1184b8b4388747f0b6638ea64b650400c6bc1555e1a275ed489659fb4&">
     <style>
         body {
-            font-family: 'Cairo', Arial, sans-serif;
-            background: #181818;
+            background: #191919;
             color: #fff;
+            font-family: 'Cairo', Arial, sans-serif;
             margin: 0;
-            padding: 0;
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
         }
-        .container {
-            width: 90%;
-            max-width: 600px;
+        .main-box {
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
             text-align: center;
-            margin-top: 60px;
         }
         .download-title {
             color: #e754c5;
-            font-size: 1.5em;
+            font-size: 2em;
+            margin-bottom: 20px;
             font-weight: bold;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
         }
-        .app-img-box {
-            text-align: center;
-            margin: 20px auto 0 auto;
+        .download-title i {
+            margin-left: 8px;
+            font-size: 1.15em;
+            vertical-align: middle;
         }
-        .app-img-box img {
-            max-width: 270px;
+        .img-box {
+            display: flex;
+            justify-content: center;
+        }
+        .img-box img {
+            max-width: 350px;
             width: 100%;
             background: #fff;
-            border-radius: 12px;
-            padding: 7px;
-            box-shadow: 0 2px 12px #0004;
-            border: 2px solid #e754c5;
-            margin-top: 16px;
+            border-radius: 15px;
+            padding: 8px;
+            box-shadow: 0 2px 16px #0004;
+            border: 4px solid #e754c5;
+            transition: box-shadow 0.2s, transform 0.2s;
+            cursor: pointer;
+        }
+        .img-box img:hover {
+            box-shadow: 0 6px 26px #c38fdc99;
+            transform: scale(1.04);
+        }
+        .download-btn {
+            display: inline-block;
+            margin: 30px auto 0 auto;
+            padding: 13px 50px;
+            border-radius: 8px;
+            background: #e754c5;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border: none;
+            box-shadow: 0 2px 10px #0002;
+            transition: background 0.15s, transform 0.1s;
+            cursor: pointer;
+        }
+        .download-btn:hover {
+            background: #bf3da2;
+            transform: scale(1.04);
         }
     </style>
+    <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body>
-    <div class="container">
+    <div class="main-box">
         <div class="download-title">
-            
-للــios تحميل - تطبيق 📱
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            تحميل - تطبيق <b>ios</b> ــ
         </div>
-        <div class="app-img-box">
-            <img src="https://cdn.discordapp.com/attachments/1371812978869014638/1373386757248123031/DMC_1.png?ex=682a3997&is=6828e817&hm=d6a3c0d1184b8b4388747f0b6638ea64b650400c6bc1555e1a275ed489659fb4&"
-                 alt="تطبيق iOS">
+        <div class="img-box">
+            <a href="https://www.mediafire.com/file/6qmgs2t6200htir/Codex_v2.670.apk/file" target="_blank">
+                <img src="https://cdn.discordapp.com/attachments/1371812978869014638/1373386757248123031/DMC_1.png?ex=682a3997&is=6828e817&hm=d6a3c0d1184b8b4388747f0b6638ea64b650400c6bc1555e1a275ed489659fb4&" alt="صورة تطبيق iOS">
+            </a>
         </div>
-        <!-- يمكنك إضافة زر تحميل أو روابط أخرى هنا لو أردت -->
+        <a class="download-btn" href="https://www.mediafire.com/file/6qmgs2t6200htir/Codex_v2.670.apk/file" target="_blank">
+            تحميل التطبيق
+        </a>
     </div>
 </body>
 </html>
