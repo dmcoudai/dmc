@@ -14,46 +14,42 @@
             color: #fff;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
         }
         .top-bar {
+            margin: 24px auto 20px auto;
             background: #065d8c;
-            border-radius: 14px;
+            border-radius: 18px;
             display: flex;
             align-items: center;
-            gap: 8px;
-            padding: 4px 18px 4px 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            margin-top: 18px;
-            margin-bottom: 25px;
+            justify-content: center;
+            gap: 12px;
+            padding: 6px 24px;
             width: fit-content;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
         }
         .logo-img {
-            width: 28px;
-            height: 28px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             object-fit: cover;
             background: #fff;
-            border: 1.5px solid #fff2;
+            border: 2px solid #fff2;
             box-sizing: border-box;
         }
         .site-title {
             color: #fff;
-            font-size: 1.16em;
+            font-size: 1.18em;
             font-family: Tahoma, Arial, sans-serif;
             font-weight: 600;
-            margin: 0 8px;
+            margin: 0 10px;
             letter-spacing: .5px;
         }
-        /* باقي التنسيقات كما هي */
         .container {
             width: 90%;
             max-width: 600px;
             text-align: center;
+            margin: 0 auto;
         }
         .header {
             margin-bottom: 20px;
@@ -109,7 +105,6 @@
             font-weight: bold;
             letter-spacing: 1px;
         }
-        /* أزرار السوشيال */
         .social-buttons-box {
             margin: 10px auto 30px;
             display: flex;
@@ -155,7 +150,7 @@
     </script>
 </head>
 <body>
-    <!-- شريط عنوان الموقع مع شعارين -->
+    <!-- شريط الموقع في الأعلى -->
     <div class="top-bar">
         <img class="logo-img" src="https://cdn.discordapp.com/attachments/1371812978869014638/1372217436366962749/dmc_logo.png" alt="شعار dmc القديم">
         <span class="site-title">موقع dmc</span>
@@ -164,7 +159,7 @@
 
     <div class="container">
         <div class="header">
-            <!-- يمكنك وضع هنا الشعار الكبير أو واحد من الشعارات حسب رغبتك -->
+            <!-- الشعار الكبير يبقى مثل ما تريد -->
             <img src="https://cdn.discordapp.com/attachments/1371812978869014638/1372217436366962749/dmc_logo.png" alt="dmc logo" width="100" height="100">
             <h1>مرحباً بكم في موقع <span>dmc</span></h1>
         </div>
@@ -185,11 +180,9 @@
                 <span>💻</span>
             </div>
         </div>
-        <!-- عنوان تحميل -->
         <div class="download-title">
-            اذا كـنـت تـحـتـاج اسـتـفـسـار عـن ايـشـي بـالـهـاك او الـقـنـاة خــش سـيـرفــر الـديـسـكـورد
+            اذا كنت تحتاج استفسار عن اي شي بالهاك او القناة خش سيرفر الديسكورد
         </div>
-        <!-- أزرار السوشيال تحت كلمة تحميل -->
         <div class="social-buttons-box">
             <a href="https://discord.gg/d-c" class="social-btn btn-blue" target="_blank">
                 ديسكورد <i class="fa-brands fa-discord"></i>
