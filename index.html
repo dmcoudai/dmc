@@ -65,6 +65,7 @@
             align-items: center;
             cursor: pointer;
             transition: background 0.3s;
+            text-decoration: none;
         }
         .app:hover {
             background: #333;
@@ -187,11 +188,6 @@
             .apps .app-title { font-size: 1em; }
         }
     </style>
-    <script>
-        function loadPage(page) {
-            document.getElementById('content-frame').src = page;
-        }
-    </script>
 </head>
 
 <body>
@@ -203,23 +199,20 @@
         <div class="welcome">
             حـيـاك الله اذا كـنـت تـبـي هـاكـات لــروبـلـكـس وصـلـت الـمـكـان الـصــحـيـح اخـتـار نــوع الـجـهـاز حـقـك و اضـغـط عـلـى زر الـتـحـمـيـل واسـتـمـتـع 
         </div>
-
-<div class="apps">
-    <a class="app" href="ios.html">
-        <span class="app-title">تطبيقات iOS</span>
-        <span>📱</span>
-    </a>
-    <a class="app" href="android.html">
-        <span class="app-title">تطبيقات Android</span>
-        <span>🤖</span>
-    </a>
-    <a class="app" href="pc.html">
-        <span class="app-title">تطبيقات PC</span>
-        <span>💻</span>
-    </a>
-</div>
-<!-- احذف السطر التالي نهائياً -->
-<!-- <iframe id="content-frame" src="ios.html"></iframe> -->
+        <div class="apps">
+            <a class="app" href="ios.html">
+                <span class="app-title">تطبيقات iOS</span>
+                <span>📱</span>
+            </a>
+            <a class="app" href="android.html">
+                <span class="app-title">تطبيقات Android</span>
+                <span>🤖</span>
+            </a>
+            <a class="app" href="pc.html">
+                <span class="app-title">تطبيقات PC</span>
+                <span>💻</span>
+            </a>
+        </div>
         <div class="welcome">
            Dev by : dmcoudai
         </div>
@@ -236,8 +229,7 @@
                 يوتيوب <i class="fa-brands fa-youtube"></i>
             </a>
         </div>
-    
-        <iframe id="content-frame" src="ios.html"></iframe>
+        <!-- ملاحظة: لا يوجد iframe هنا -->
     </div>
 </body>
 </html>
