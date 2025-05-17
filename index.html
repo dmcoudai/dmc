@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>موقع dmc</title>
-    <!-- إذا كنت تريد وضع الصورة كـ favicon (أيقونة المتصفح)، استخدم rel="icon" وليس rel="stylesheet" -->
-    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1371812978869014638/1372217436366962749/dmc_logo.png?ex=6829ed13&is=68289b93&hm=c6c1b59563e917362a8cab7d1bdad9ca5699c0053f72b4cc73005281cf312c3a&">
+    <!-- Font Awesome لأيقونات ديسكورد ويوتيوب -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <style>
         body {
             font-family: 'Cairo', Arial, sans-serif;
@@ -18,6 +18,43 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+        }
+        .title-bar {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background: #065d8c;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            padding: 2px 16px;
+            gap: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            z-index: 100;
+        }
+        .close-btn {
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            user-select: none;
+            margin-left: 4px;
+        }
+        .site-title {
+            color: #fff;
+            font-size: 15px;
+            font-family: Tahoma, Arial, sans-serif;
+            font-weight: 500;
+        }
+        .logo-img {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #fff;
+            border: 1.5px solid #fff2;
+            box-sizing: border-box;
+            margin-right: 4px;
         }
         .container {
             width: 90%;
@@ -37,7 +74,7 @@
             margin: 0;
         }
         .header span {
-            color: #e754c5; /* وردي بنفسجي بدل الأصفر */
+            color: #e754c5;
         }
         .welcome {
             background: #222;
@@ -69,7 +106,45 @@
         .app-title {
             font-size: 1.1em;
             font-weight: bold;
-            color: #e754c5; /* وردي بنفسجي بدل الأصفر */
+            color: #e754c5;
+        }
+        .download-title {
+            margin: 30px auto 10px;
+            font-size: 1.25em;
+            color: #fff;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        /* أزرار السوشيال */
+        .social-buttons-box {
+            margin: 10px auto 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .social-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-radius: 8px;
+            border: 2px solid #fff;
+            padding: 12px 24px;
+            color: #fff;
+            font-size: 1.1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.1s, box-shadow 0.1s, opacity 0.1s;
+            box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+        }
+        .btn-blue  { background: #5865f2; border-color: #fff; }
+        .btn-red   { background: #e50000; border-color: #fff; }
+        .social-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 16px rgb(0 0 0 / 18%);
+            opacity: 0.9;
+        }
+        .social-btn i {
+            font-size: 1.3em;
         }
         iframe {
             width: 100%;
@@ -86,9 +161,16 @@
     </script>
 </head>
 <body>
+    <!-- شريط العنوان يظهر دائماً أعلى يمين الصفحة -->
+    <div class="title-bar">
+        <span class="close-btn" onclick="document.querySelector('.title-bar').style.display='none'">&times;</span>
+        <span class="site-title">موقع dmc</span>
+        <img class="logo-img" src="https://i.imgur.com/3KQZAE8.png" alt="dmc logo">
+    </div>
+
     <div class="container">
         <div class="header">
-            <img src="https://cdn.discordapp.com/attachments/1371812978869014638/1372217436366962749/dmc_logo.png?ex=6829ed13&is=68289b93&hm=c6c1b59563e917362a8cab7d1bdad9ca5699c0053f72b4cc73005281cf312c3a&" alt="dmc Logo">
+            <img src="https://i.imgur.com/3KQZAE8.png" alt="dmc logo" width="100" height="100">
             <h1>مرحباً بكم في موقع <span>dmc</span></h1>
         </div>
         <div class="welcome">
@@ -107,6 +189,19 @@
                 <span class="app-title">تطبيقات PC</span>
                 <span>💻</span>
             </div>
+        </div>
+        <!-- عنوان تحميل -->
+        <div class="download-title">
+            اذا كـنـت تـحـتـاج اسـتـفـسـار عـن ايـشـي بـالـهـاك او الـقـنـاة خــش سـيـرفــر الـديـسـكـورد
+        </div>
+        <!-- أزرار السوشيال تحت كلمة تحميل -->
+        <div class="social-buttons-box">
+            <a href="https://discord.gg/d-c" class="social-btn btn-blue" target="_blank">
+                ديسكورد <i class="fa-brands fa-discord"></i>
+            </a>
+            <a href="https://www.youtube.com/@iss1-u9x" class="social-btn btn-red" target="_blank">
+                يوتيوب <i class="fa-brands fa-youtube"></i>
+            </a>
         </div>
         <iframe id="content-frame" src="ios.html"></iframe>
     </div>
