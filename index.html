@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>موقع dmc</title>
-    <!-- إذا كنت تريد وضع الصورة كـ favicon (أيقونة المتصفح)، استخدم rel="icon" وليس rel="stylesheet" -->
     <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1371812978869014638/1372217436366962749/dmc_logo.png?ex=6829ed13&is=68289b93&hm=c6c1b59563e917362a8cab7d1bdad9ca5699c0053f72b4cc73005281cf312c3a&">
     <style>
         body {
@@ -17,7 +16,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
         }
         .container {
             width: 90%;
@@ -37,7 +36,7 @@
             margin: 0;
         }
         .header span {
-            color: #e754c5; /* وردي بنفسجي بدل الأصفر */
+            color: #e754c5;
         }
         .welcome {
             background: #222;
@@ -69,7 +68,21 @@
         .app-title {
             font-size: 1.1em;
             font-weight: bold;
-            color: #e754c5; /* وردي بنفسجي بدل الأصفر */
+            color: #e754c5;
+        }
+        .app-img-box {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .app-img-box img {
+            margin-top: 10px;
+            max-width: 200px;
+            width: 100%;
+            background: #fff;
+            border-radius: 12px;
+            padding: 7px;
+            box-shadow: 0 2px 12px #0004;
+            border: 2px solid #e754c5;
         }
         iframe {
             width: 100%;
@@ -94,32 +107,33 @@
         <div class="welcome">
             اختر أحد التطبيقات لعرض المزيد من المعلومات
         </div>
-   <div class="apps">
-    <div class="app" onclick="loadPage('ios.html')">
-        <span class="app-title">تطبيقات iOS</span>
-        <span>📱</span>
+        <div class="apps">
+            <div class="app" onclick="loadPage('ios.html')">
+                <span class="app-title">تطبيقات iOS</span>
+                <span>📱</span>
+            </div>
+            <div class="app-img-box">
+                <img src="https://cdn.discordapp.com/attachments/1371812978869014638/1373386757248123031/DMC_1.png?ex=682a3997&is=6828e817&hm=d6a3c0d1184b8b4388747f0b6638ea64b650400c6bc1555e1a275ed489659fb4&"
+                     alt="تطبيق iOS">
+            </div>
+            <div class="app" onclick="loadPage('android.html')">
+                <span class="app-title">تطبيقات Android</span>
+                <span>🤖</span>
+            </div>
+            <div class="app-img-box">
+                <img src="https://cdn.discordapp.com/attachments/1371812978869014638/1373386757248123031/DMC_1.png?ex=682a3997&is=6828e817&hm=d6a3c0d1184b8b4388747f0b6638ea64b650400c6bc1555e1a275ed489659fb4&"
+                     alt="تطبيق Android">
+            </div>
+            <div class="app" onclick="loadPage('pc.html')">
+                <span class="app-title">تطبيقات PC</span>
+                <span>💻</span>
+            </div>
+            <div class="app-img-box">
+                <img src="https://cdn.discordapp.com/attachments/1371812978869014638/1373386757248123031/DMC_1.png?ex=682a3997&is=6828e817&hm=d6a3c0d1184b8b4388747f0b6638ea64b650400c6bc1555e1a275ed489659fb4&"
+                     alt="تطبيق PC">
+            </div>
+        </div>
+        <iframe id="content-frame" src="ios.html"></iframe>
     </div>
-    <div style="text-align:center; margin-bottom:15px;">
-        <img src="https://cdn.discordapp.com/attachments/1371812978869014638/1373386757248123031/DMC_1.png?ex=682a3997&is=6828e817&hm=d6a3c0d1184b8b4388747f0b6638ea64b650400c6bc1555e1a275ed489659fb4&"
-             alt="تطبيق iOS"
-             style="margin-top:8px;max-width:170px;width:100%;">
-    </div>
-    <div class="app" onclick="loadPage('android.html')">
-        <span class="app-title">تطبيقات Android</span>
-        <span>🤖</span>
-    </div>
-    <div style="text-align:center; margin-bottom:15px;">
-        <img src="https://cdn.discordapp.com/attachments/1371812978869014638/1373386757248123031/DMC_1.png?ex=682a3997&is=6828e817&hm=d6a3c0d1184b8b4388747f0b6638ea64b650400c6bc1555e1a275ed489659fb4&"
-             alt="تطبيق Android"
-             style="margin-top:8px;max-width:170px;width:100%;">
-    </div>
-    <div class="app" onclick="loadPage('pc.html')">
-        <span class="app-title">تطبيقات PC</span>
-        <span>💻</span>
-    </div>
-    <div style="text-align:center;">
-        <img src="https://cdn.discordapp.com/attachments/1371812978869014638/1373386757248123031/DMC_1.png?ex=682a3997&is=6828e817&hm=d6a3c0d1184b8b4388747f0b6638ea64b650400c6bc1555e1a275ed489659fb4&"
-             alt="تطبيق PC"
-             style="margin-top:8px;max-width:170px;width:100%;">
-    </div>
-</div>
+</body>
+</html>
