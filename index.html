@@ -65,7 +65,6 @@
         .app-title {
             font-size: 1.1em;
             font-weight: bold;
-            color: #FFD600;
         }
         iframe {
             width: 100%;
@@ -73,6 +72,13 @@
             border: none;
             margin-top: 20px;
             background: #222;
+        }
+
+        /* تدرج وردي إلى بنفسجي */
+        .gradient-text {
+            background: linear-gradient(45deg, #ff69b4, #8a2be2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
     <script>
@@ -85,22 +91,22 @@
     <div class="container">
         <div class="header">
             <img src="https://cdn.discordapp.com/attachments/1371812978869014638/1372217436366962749/dmc_logo.png?ex=6829ed13&is=68289b93&hm=c6c1b59563e917362a8cab7d1bdad9ca5699c0053f72b4cc73005281cf312c3a&" alt="dmc Logo">
-            <h1>مرحباً بكم في موقع <span style="color: #FFD600;">dmc</span></h1>
+            <h1>مرحباً بكم في موقع <span class="gradient-text">dmc</span></h1>
         </div>
         <div class="welcome">
             اختر أحد التطبيقات لعرض المزيد من المعلومات
         </div>
         <div class="apps">
             <div class="app" onclick="loadPage('ios.html')">
-                <span class="app-title">تطبيقات iOS</span>
+                <span class="app-title gradient-text">تطبيقات iOS</span>
                 <span>📱</span>
             </div>
             <div class="app" onclick="loadPage('android.html')">
-                <span class="app-title">تطبيقات Android</span>
+                <span class="app-title gradient-text">تطبيقات Android</span>
                 <span>🤖</span>
             </div>
             <div class="app" onclick="loadPage('pc.html')">
-                <span class="app-title">تطبيقات PC</span>
+                <span class="app-title gradient-text">تطبيقات PC</span>
                 <span>💻</span>
             </div>
         </div>
