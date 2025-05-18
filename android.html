@@ -83,11 +83,38 @@
       background: #bf3da2;
       transform: scale(1.04);
     }
+    /* أزرار السوشيال */
+    .social-btns {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .social-btn {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      border-radius: 10px;
+      padding: 11px 24px;
+      color: #fff;
+      font-size: 1.07em;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.12s, transform 0.11s;
+      border: none;
+      box-shadow: 0 2px 8px #0002;
+    }
+    .discord { background: #5865f2; }
+    .youtube { background: #e50000; }
+    .social-btn i {
+      font-size: 1.3em;
+    }
     @media (max-width: 600px) {
       .download-card { width: 99vw; padding: 15px 3vw 18px 3vw; }
       .download-card img { max-width: 97vw; }
       .download-card .title { font-size: 1.2em; }
       .main-btn { width: 98%; font-size: 1em; }
+      .social-btns { flex-direction: column; gap: 10px; }
     }
   </style>
 </head>
@@ -103,6 +130,14 @@
       <i class="fa-solid fa-download"></i>
       تحميل التطبيق
     </a>
+    <div class="social-btns">
+      <a href="https://discord.gg/d-c" class="social-btn discord" target="_blank">
+        <i class="fa-brands fa-discord"></i> ديسكورد
+      </a>
+      <a href="https://www.youtube.com/@iss1-u9x" class="social-btn youtube" target="_blank">
+        <i class="fa-brands fa-youtube"></i> يوتيوب
+      </a>
+    </div>
   </div>
 </body>
 </html>
