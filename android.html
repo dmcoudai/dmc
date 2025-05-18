@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>تحميل تطبيق android</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Favicon أيقونة التاب -->
-    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1371812978869014638/1373386757248123031/DMC_1.png?ex=682a3997&is=6828e817&hm=d6a3c0d1184b8b4388747f0b6638ea64b650400c6bc1555e1a275ed489659fb4&">
-    <style>
-        body {
-            background: #191919;
-            color: #fff;
-            font-family: 'Cairo', Arial, sans-serif;
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .main-box {
-            width: 100%;
-            max-width: 500px;
-            margin: auto;
-            text-align: center;
-        }
-        .download-title {
-            color: #e754c5;
-            font-size: 2em;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-        .download-title i {
-            margin-left: 8px;
-            font-size: 1.15em;
-            vertical-align: middle;
-        }
-        .img-box {
-            display: flex;
-            justify-content: center;
-        }
-        .img-box img {
-            max-width: 350px;
-            width: 100%;
-            background: #fff;
-            border-radius: 15px;
-            padding: 8px;
-            box-shadow: 0 2px 16px #0004;
-            border: 4px solid #e754c5;
-            transition: box-shadow 0.2s, transform 0.2s;
-            cursor: pointer;
-        }
-        .img-box img:hover {
-            box-shadow: 0 6px 26px #c38fdc99;
-            transform: scale(1.04);
-        }
-        .download-btn {
-            display: inline-block;
-            margin: 30px auto 0 auto;
-            padding: 13px 50px;
-            border-radius: 8px;
-            background: #e754c5;
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.1em;
-            font-weight: bold;
-            letter-spacing: 2px;
-            border: none;
-            box-shadow: 0 2px 10px #0002;
-            transition: background 0.15s, transform 0.1s;
-            cursor: pointer;
-        }
-        .download-btn:hover {
-            background: #bf3da2;
-            transform: scale(1.04);
-        }
-    </style>
-    <!-- Font Awesome لأيقونة الأندرويد -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تحميل تطبيق Android | dmc</title>
+  <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1371812978869014638/1373386757248123031/DMC_1.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <style>
+    body {
+      background: #101010;
+      color: #fff;
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Cairo', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .download-card {
+      background: #181818;
+      border-radius: 14px;
+      width: 480px;
+      max-width: 98vw;
+      margin: 60px auto 40px auto;
+      box-shadow: 0 4px 14px #0002;
+      padding: 24px 16px 32px 16px;
+      text-align: center;
+    }
+    .download-card .title {
+      font-size: 2.1em;
+      font-weight: bold;
+      color: #e754c5;
+      margin-bottom: 17px;
+      text-shadow: 0 1px 8px #0004;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .download-card .title .icon {
+      font-size: 1.2em;
+      margin-left: 5px;
+      color: #e754c5;
+    }
+    .download-card img {
+      width: 96%;
+      max-width: 370px;
+      border-radius: 13px;
+      margin-bottom: 22px;
+      border: 4px solid #e754c5;
+      background: #fff;
+      box-shadow: 0 2px 14px #0003;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /* زر التحميل بنفس نمط السوشيال */
+    .main-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 10px;
+      padding: 14px 0;
+      width: 220px;
+      color: #fff;
+      background: #e754c5;
+      font-size: 1.17em;
+      font-weight: bold;
+      border: none;
+      outline: none;
+      box-shadow: 0 2px 8px #0002;
+      transition: background 0.14s, transform 0.11s;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 0 auto;
+      margin-top: 11px;
+      letter-spacing: 1px;
+    }
+    .main-btn:hover {
+      background: #bf3da2;
+      transform: scale(1.04);
+    }
+    @media (max-width: 600px) {
+      .download-card { width: 99vw; padding: 15px 3vw 18px 3vw; }
+      .download-card img { max-width: 97vw; }
+      .download-card .title { font-size: 1.2em; }
+      .main-btn { width: 98%; font-size: 1em; }
+    }
+  </style>
 </head>
 <body>
-    <div class="main-box">
-        <div class="download-title">
-            <i class="fa-solid fa-robot"></i>
-            تحميل تطبيق <b>android</b> 
-        </div>
-        <div class="img-box">
-            <a href="https://www.mediafire.com/file_premium/2cxf1omjokhqjn3/Delta-2.671.1822.apk/file" target="_blank">
-                <img src="https://cdn.discordapp.com/attachments/1371812978869014638/1373386757248123031/DMC_1.png?ex=682a3997&is=6828e817&hm=d6a3c0d1184b8b4388747f0b6638ea64b650400c6bc1555e1a275ed489659fb4&" alt="صورة تطبيق Android">
-            </a>
-        </div>
-        <a class="download-btn" href="https://www.mediafire.com/file_premium/2cxf1omjokhqjn3/Delta-2.671.1822.apk/file" target="_blank">
-            تحميل التطبيق
-        </a>
+  <div class="download-card">
+    <div class="title">
+      <span class="icon"><i class="fa-brands fa-android"></i></span>
+      تحميل تطبيق <span style="font-weight:bold">android</span>
     </div>
+    <img src="https://media.discordapp.net/attachments/1371812978869014638/1373377441888659578/IMG_20240516_232937_368.jpg"
+         alt="Android App">
+    <a class="main-btn" href="#" target="_blank">
+      <i class="fa-solid fa-download"></i>
+      تحميل التطبيق
+    </a>
+  </div>
 </body>
 </html>
