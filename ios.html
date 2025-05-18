@@ -4,44 +4,55 @@
   <meta charset="UTF-8">
   <title>تحميل تطبيق iOS</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { background: #101010; color: #fff; font-family: 'Cairo', Arial, sans-serif; }
+    body {
+      background: #101010;
+      color: #fff;
+      font-family: 'Cairo', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
     .download-card {
-      margin: 60px auto 40px auto;
+      margin: 18px auto 16px auto;
       background: #181818;
       border-radius: 14px;
-      width: 480px;
+      width: 430px;
       max-width: 98vw;
       box-shadow: 0 4px 14px #0002;
-      padding: 24px 16px 32px 16px;
+      padding: 18px 10px 22px 10px;
       text-align: center;
+      position: relative;
+      top: 0;
     }
     .download-card .title {
-      font-size: 2.1em;
+      font-size: 1.6em;
       font-weight: bold;
       color: #e754c5;
-      margin-bottom: 17px;
+      margin-bottom: 15px;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 10px;
     }
     .download-card .title .icon {
-      font-size: 1.2em;
+      font-size: 1.1em;
       margin-left: 5px;
       color: #e754c5;
     }
     .download-card img {
-      width: 96%;
-      max-width: 370px;
+      width: 97%;
+      max-width: 340px;
       border-radius: 13px;
-      margin-bottom: 22px;
-      border: 4px solid #e754c5;
+      margin-bottom: 17px;
+      border: 3px solid #e754c5;
       background: #fff;
-      box-shadow: 0 2px 14px #0003;
+      box-shadow: 0 2px 10px #0003;
       display: block;
       margin-left: auto;
       margin-right: auto;
+      object-fit: cover;
+      height: 155px;
     }
     .main-btn {
       display: flex;
@@ -49,11 +60,11 @@
       justify-content: center;
       gap: 10px;
       border-radius: 10px;
-      padding: 14px 0;
-      width: 220px;
+      padding: 12px 0;
+      width: 205px;
       color: #fff;
       background: #e754c5;
-      font-size: 1.17em;
+      font-size: 1.08em;
       font-weight: bold;
       border: none;
       outline: none;
@@ -62,22 +73,22 @@
       cursor: pointer;
       text-decoration: none;
       margin: 0 auto;
-      margin-top: 11px;
+      margin-top: 8px;
       letter-spacing: 1px;
     }
     .main-btn:hover { background: #bf3da2; transform: scale(1.04);}
     .between-text {
-      margin: 18px auto 18px auto;
+      margin: 14px auto 14px auto;
       color: #fff;
-      font-size: 1.13em;
+      font-size: 1.09em;
       text-align: center;
       font-weight: bold;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.4px;
     }
     .dev-text {
-      margin: 12px auto 8px auto;
+      margin: 10px auto 8px auto;
       color: #e754c5;
-      font-size: 1.12em;
+      font-size: 1.05em;
       text-align: center;
       font-weight: bold;
       letter-spacing: 0.5px;
@@ -86,7 +97,7 @@
     .social-btns {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 13px;
       margin-top: 0px;
     }
     .social-btn {
@@ -94,9 +105,9 @@
       align-items: center;
       gap: 9px;
       border-radius: 10px;
-      padding: 11px 24px;
+      padding: 10px 18px;
       color: #fff;
-      font-size: 1.07em;
+      font-size: 1em;
       font-weight: bold;
       text-decoration: none;
       transition: background 0.12s, transform 0.11s;
@@ -106,14 +117,24 @@
     .discord { background: #5865f2; }
     .youtube { background: #e50000; }
     .social-btn i {
-      font-size: 1.3em;
+      font-size: 1.2em;
     }
     @media (max-width: 600px) {
-      .download-card { width: 99vw; padding: 15px 3vw 18px 3vw; }
-      .download-card img { max-width: 97vw; }
-      .download-card .title { font-size: 1.2em; }
-      .main-btn { width: 98%; font-size: 1em; }
-      .social-btns { flex-direction: column; gap: 10px; }
+      .download-card {
+        margin: 8px auto 8px auto;
+        width: 99vw;
+        padding: 10px 1vw 14px 1vw;
+      }
+      .download-card img {
+        max-width: 96vw;
+        height: 120px;
+        margin-bottom: 12px;
+      }
+      .download-card .title { font-size: 1em; margin-bottom: 8px; }
+      .main-btn { width: 99%; font-size: 0.97em; padding: 11px 0;}
+      .social-btns { flex-direction: column; gap: 9px; }
+      .between-text { font-size: 0.93em; margin: 9px auto 7px auto; }
+      .dev-text { margin: 7px auto 6px auto; font-size: 0.97em;}
     }
   </style>
 </head>
@@ -123,7 +144,7 @@
       <span class="icon"><i class="fa-brands fa-apple"></i></span>
       تحميل تطبيق <span style="font-weight:bold">iOS</span>
     </div>
-    <img src="https://media.discordapp.net/attachments/1371812978869014638/1373386757248123031/DMC_1.png?ex=682ae257&is=682990d7&hm=83a0bce9efb16d73f90044cf609a455eb02410272baa85d15eb992fc88c40e12&=&format=webp&quality=lossless&width=1452&height=817" alt="iOS App">
+    <img src="https://images.githubusercontent.com/130938254/325582781-8c8c4a5c-42eb-4183-9c59-7a0e0d5e1b62.png" alt="iOS App">
     <a class="main-btn" href="https://www.mediafire.com/file/6qmgs2t6200htir/Codex_v2.670.apk/file" target="_blank">
       <i class="fa-solid fa-download"></i>
       تحميل تطبيق Codex
@@ -131,7 +152,7 @@
     <div class="between-text">
       الـحـقـوق كـامـلـه تـابـعـه لـدمـس والـمـوقـع هـذا لـدمـس اذا كـنـت تـحـتـاج الـى مـسـاعـدة او الاسـتـفـسـار خــش سـيـرفـر الـديـسـكـورد وتـقـدر تـسـتـفـسـر عـن ايـشـي ودـمـتـم سـالـمـيـن🤩
     </div>
-    <div class="dev-text">dev by : dcmoudai</div>
+    <div class="dev-text">dev by : dmcoudai</div>
     <div class="social-btns">
       <a href="https://discord.gg/bfn" class="social-btn discord" target="_blank">
         <i class="fa-brands fa-discord"></i> ديسكورد
